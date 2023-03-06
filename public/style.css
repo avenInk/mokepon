@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+    font-family: 'Fredoka One', cursive;
+    background-color: beige;
+}
+
+.titulo_clase  /* selector */ {
+    color /* propiedad*/ : red /*valor */ ;
+    /* width: 350px;
+    xheight: 50px;  */
+    font-size: 46px;
+}
+
+.subtitulo {
+    color: blueviolet;
+    font-size: 35px;
+}
+
+#Mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tarjeta-de-mokepon {
+    width: 239px;
+    height: 150px;
+    background: antiquewhite;
+    padding: 10px;
+    margin: 19px;
+    box-sizing: border-box;
+    border: 5px solid pink;
+    border-radius: 15px;
+    display: flex;
+    align-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+#Ataque {
+
+    flex-direction: column;
+    align-items: center;
+}
+.buttons-class{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+#boton-reiniciar{
+    border: transparent;
+    background-color: #f3a8b5;
+    font-size: 17px;
+    border-radius: 20px;
+}
+
+
+.ataques-boton {
+    width: 108px;
+    font-size: 30px;
+    margin: 10px 10px 40px 3px;
+    border-radius: 19px;
+    border: 3px solid #277e00;
+    background-color: #7bb77b;
+    color: #264021;
+    flex-direction: column;
+    align-items: center;
+}
+
+#boton-seleccion-mascotas {
+    background-color: mediumvioletred;
+    color: white;
+    font-size: 30px;
+    border-radius: 15px;
+    margin-top: 80px;
+    display: flex;
+    border-color: #cb4f4f;
+}
+
+.img-ratigueya {
+    width: 158px;
+}
+
+.img-other{
+    width: 99px;
+}
+
+input {
+    display: none;
+}
+
+input:hover + label {
+    width: 248px;
+    height: 162px;
+}
+input:checked + label {
+    background: #f7e5cd
+}
+button:hover{
+    font-size: 34px;
+}
+#boton-seleccion-mascotas:hover{
+    font-size: 32px;
+}
+
+#boton-reiniciar:hover{
+    background-color: pink;
+}
+
+.tarjeta {
+    display: flex;
+    gap: 10px; /* crea un espaciado */
+}
+
+#Mensajes{ 
+    display: flex;
+    background-color: pink;
+    border-radius: 20px;
+    width: 377px;
+    height: 69px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+#resultado {
+    margin: 14px;
+}
+
+.ataques{
+    display: grid;
+}
+
+@media (max-width: 750px){
+    .tarjeta {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* crea un espaciado */
+    }
+}
+
+
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    background-color: pink;
+    margin: 40px;
+    border-radius: 20px;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    background-color: mediumvioletred;
+    color: white;
+    font-size: 20px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    border-color: #cb4f4f;
+    align-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+#ver-mapa div {
+    display: flex;
+}
+
+@media (max-width: 600px){
+    .buttons-class{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300px){
+    #ver-mapa div {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+}
+

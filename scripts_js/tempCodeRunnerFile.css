@@ -1,0 +1,7 @@
+@media (max-width: 360px){
+    .tarjeta {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* crea un espaciado */
+    }
+}
